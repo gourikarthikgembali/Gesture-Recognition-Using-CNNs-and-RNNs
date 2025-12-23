@@ -9,7 +9,7 @@ Both models classify **5 hand gestures** from video clips of 30 frames each.
 
 ---
 
-## ✨ Features
+## Features
 - Custom **video frame generator**
 - **Transfer learning** with MobileNet (frozen base)
 - **GRU-based** sequence modeling
@@ -19,7 +19,7 @@ Both models classify **5 hand gestures** from video clips of 30 frames each.
 
 ---
 
-## 📁 Dataset
+## Dataset
 - Input: folders of **30‑frame** sequences
 - Image size: **128 × 128 × 3**
 - Labels: `train.csv` and `val.csv`
@@ -35,7 +35,7 @@ Project_data/
 
 ---
 
-## 🧠 Models
+## Models
 
 ### 1) 2D CNN + RNN
 - **MobileNet** (imagenet, `include_top=False`) via `TimeDistributed`
@@ -48,7 +48,7 @@ Project_data/
 
 ---
 
-## 🚀 Training
+## Training
 - Epochs: **25**
 - Batch size: **32**
 - Callbacks:
@@ -58,13 +58,13 @@ Project_data/
 
 ---
 
-## 📊 Evaluation
+## Evaluation
 - Accuracy & loss curves for both models using Matplotlib
 - Console logs show per‑epoch train/val metrics
 
 ---
 
-## 🛠 Requirements
+## Requirements
 - Python ≥ 3.8
 - TensorFlow / Keras
 - NumPy
@@ -78,7 +78,7 @@ pip install tensorflow numpy opencv-python matplotlib
 
 ---
 
-## ▶️ Usage
+## Usage
 1. Place dataset under `Project_data/train` and `Project_data/val` with 30 frames per folder.
 2. Run the script to:
    - Load data via the custom generator
@@ -88,12 +88,11 @@ pip install tensorflow numpy opencv-python matplotlib
 
 ---
 
-## ⚠️ Notes
+## Notes
 - Ensure each folder has **exactly 30 frames**.
 - Images are **resized to 128×128** and **normalized to [0,1]** inside the generator.
 - MobileNet base is **frozen** for faster training and to prevent overfitting; you can unfreeze for fine‑tuning if needed.
 
 ---
 
-## 📄 License
-This project is for educational and research purposes.
+Maintainer: Gouri Karthik Gembali
